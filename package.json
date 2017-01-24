@@ -1,0 +1,22 @@
+{
+  "name": "epabot",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PopulateTools/epabot.git"
+  },
+  "author": "Martín González",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PopulateTools/epabot/issues"
+  },
+  "homepage": "https://github.com/PopulateTools/epabot#readme",
+  "dependencies": {
+    "d3": "^4.4.4"
+  }
+}
