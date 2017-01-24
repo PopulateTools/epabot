@@ -13,9 +13,19 @@ fs.readFile('data/data_small.csv', 'utf8', function(error, data) {
     return arg === 'Varón' ? 'hombre' : 'mujer';
   }
   
+  // Get a random message from the array
+  function getMessage(d) {
+    var strings = [
+      `Tengo ${d.EDAD.toLowerCase()} y soy ${getGenderArticle(d.SEXO)} ${getGender(d.SEXO)}`,
+      `Soy ${getGenderArticle(d.SEXO)} ${getGender(d.SEXO)}, ${d.EDAD.toLowerCase()}`
+    ];
+    
+    return strings[Math.floor(d3.randomUniform(0, strings.length)())];
+  }
+  
   // Return the tweet
   data.forEach(function(d) {
-    d.string = `Soy ${getGenderArticle(d.SEXO)} ${getGender(d.SEXO)}, ${d.EDAD.toLowerCase()}`;
+    d.string = getMessage(d);
   });
   
   // Store only the tweet
