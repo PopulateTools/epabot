@@ -11,4 +11,4 @@ epa <- as.data.frame(epa)
 data <- subset(epa, select = c(PROV, EDAD, SEXO, ECIV, NAC, EXREGNA, ANORE, NFORMA, OCUP, SITU, DUCON1, DCOM, PARCO1, HORASP, DISP, RZNDIS, DTANT, ITBU, OCUPA, OFEMP, SIDAC1))
 
 write_csv(data, "data.csv")
-write_csv(head(data, 100), "data_small.csv")
+# write_csv(head(data, 100), "data_small.csv")
