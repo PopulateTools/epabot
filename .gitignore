@@ -1,3 +1,6 @@
 data/*.zip
+data/*.csv
 data/datos_3t16
 node_modules
+tweet.sh
+tweet_list.txt
